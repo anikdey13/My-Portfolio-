@@ -1,0 +1,102 @@
+@media screen and (max-width: 1024px){
+
+    .container{
+        max-width: 924px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 768px){
+
+    .container{
+        max-width: 700px;
+        margin: auto;
+    }
+    .header_nav nav ul {
+        display: none;
+    }
+    .header_nav nav span {
+        display: block;
+        cursor: pointer;
+        z-index: 99;
+    }
+    .about_text {
+        margin-left: 20px;
+    }
+    .skill_section .container {
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 20px;
+    }
+    .contact .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        row-gap: 20px;
+    }
+    .contact_location {
+        text-align: center;
+    }
+
+}
+@media screen and (max-width: 425px){
+
+    .container{
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .banner .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+    }
+    .banner_img img {
+        width: 250px;
+    }
+    .about .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 35% 65%;
+    }
+    .skill_section .container {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    .footer .container {
+        grid-template-columns: 1fr;
+    }
+    .footer_socialLink ul {
+        display: inherit;
+    }
+    .footer_socialLink{
+        position: relative;
+    }
+    .footer_socialLink::before{
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: 0;
+        width: 350px;
+        height: 1px;
+        background-color: #fff;
+    }
+    .footer_quickLink ul{
+        display: inherit;
+    }
+    .footer_quickLink ul li a {
+        font-size: 16px;
+    }
+    .footer_quickLink {
+        margin-top: 15px;
+    }
+    .header_social_menu ul li {
+        display: inline-block;
+    }
+    .header_social_menu ul {
+        top: 91vh;
+        width: 420px;
+        text-align: center;
+    }
+    .header_social_menu ul li {
+        width: 80px;
+    }
+    .header_social_menu ul li a {
+        width: 65px;
+    }
+}
